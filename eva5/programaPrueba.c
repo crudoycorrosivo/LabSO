@@ -13,7 +13,7 @@
 int main (int argc, char*argv[])
 {
 	char *nombreArchivo = argv[2];
-	char *nombrePrograma = strcat("./", argv[1]);
+	char *nombrePrograma = argv[1];
 	char linea[100];
 	int i = 0;
 	//abrir archivo
