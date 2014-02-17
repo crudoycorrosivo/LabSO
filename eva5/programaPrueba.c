@@ -13,7 +13,7 @@
 int main (int argc, char*argv[])
 {
 	char *nombreArchivo = argv[2];
-	char *nombrePrograma = argv[1];
+	char *nombrePrograma = strcat("./", argv[1]);
 	char linea[100];
 	int i = 0;
 	//abrir archivo
@@ -37,7 +37,6 @@ int main (int argc, char*argv[])
 		char *strCantRepeticiones = strtok(NULL, " ");
 		int repeticiones = atoi(strCantRepeticiones);
 	
-		//printf("%s %s %s %s %s %d\n", nombrePrograma, numeroHilos, cantidadTiempo, numeroCuentas, valorInicial, repeticiones);
 		//ciclo para repeticiones
 		for(i = 0; i < repeticiones; i++){
 			pid_t pid_hijo = fork();
