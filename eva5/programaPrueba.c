@@ -37,7 +37,7 @@ int main (int argc, char*argv[])
 		char *strCantRepeticiones = strtok(NULL, " ");
 		int repeticiones = atoi(strCantRepeticiones);
 	
-		//ciclo para repeticiones
+		//ciclo para repeticiones de transferencias
 		for(i = 0; i < repeticiones; i++){
 			pid_t pid_hijo = fork();
 			if(pid_hijo == 0){
